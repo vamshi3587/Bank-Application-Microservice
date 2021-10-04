@@ -1,0 +1,29 @@
+spring:
+ application:    name: TRANSACTION
+ jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+#Oracle Settings   
+ datasource:
+    url: jdbc:mysql://localhost:3306/student
+    username: root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+ zipkin:    enabled: false
+    
+logging:
+  level:    org.springframework.web: DEBUG
+  file:    path: ./target/test-classes/example.log
+  
+server:
+  port: 9003
+
+Transaction :
+ PaymentService : http://localhost:9696/
+
+
+
+
+  
+      
