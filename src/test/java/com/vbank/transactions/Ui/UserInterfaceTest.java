@@ -22,7 +22,7 @@ class UserInterfaceTest {
 	public void savetrans() {
 		Transactions trans2=serv.saveTrans(trans);
 		assertNull(trans2.getCif()+trans2.getAmount(),trans2.getPaymentdate());
-		//return serv.saveTrans(trans);
+		
 	}
 
 	
